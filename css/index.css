@@ -1,0 +1,753 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#0d0d0d;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* ********************************************** Default Desktop Width ********************************************** */
+
+/* Website Header Starts Here */
+header {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 50px;
+    width: 100%;
+    height: 700px;
+    /* background-blend-mode: darken; */
+    background-attachment: fixed;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header .center {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav .logo {
+    font-size: 30px;
+    font-weight: 900;
+    width: 40%;
+}
+
+header nav .trigger {
+    display: none;
+}
+
+header nav .navMenu {
+    list-style-type: none;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header nav li {
+    margin-left: 5%;
+}
+
+header nav .navMenu a {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding-top: 15px;
+    transition-duration: 300ms;
+    transition-property: transform,letter-spacing;
+}
+
+header nav .navMenu a:hover {
+    transform: matrix(2,0,0,2,0,20);
+    text-shadow: 3px 3px 4px #2b8fc4;
+    cursor: default;
+    letter-spacing: 3px;
+}
+
+header nav .navMenu a:active {
+    letter-spacing: normal;
+    text-shadow: none;
+}
+
+header nav .navMenu .active {
+    margin: 0;
+}
+
+header nav .navMenu .active a {
+    background-color: #2b8fc4;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+header nav .navMenu .active a:hover {
+    letter-spacing: 1px;
+    text-shadow: none;
+    transform: none;
+}
+
+header .banner {
+    text-align: center;
+    margin-top: 150px;
+}
+
+header .banner h1 {
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+header .banner p {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    line-height: 40px;
+}
+
+header .banner button {
+    color: white;
+    border: 0;
+    background-color: #2b8fc4;
+    height: 45px;
+    width: 135px;
+    border-radius: 4px;
+    font-size: 1.7rem;
+    margin-top: 50px;
+}
+/* Website Header Ends Here */
+
+/* ................................................................................................................. */
+
+/* Website Body Starts Here */
+
+/* Section 1. Three Boxes Starts Here */
+.sec1 {
+    width: 100%;
+    background-color: black;
+    color: gray;
+    padding: 70px 0;
+}
+
+.sec1 .center {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sec1 .box {
+    width: 30%;
+    text-align: center;
+}
+
+.sec1 .box h3{
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: lightgray;
+}
+
+.sec1 .box span {
+    font-size: 45px;
+    color: white;
+}
+
+.sec1 .box p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 25px;
+    margin-top: 30px;
+}
+
+.sec1 .box button {
+    background-color: #2b8fc4;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-weight: lighter;
+    height: 43px;
+    width: 123px;
+    margin-top: 27px;
+}
+/* Section 1. Three Boxes Ends Here */
+
+/* Section 2 Starts Here */
+.sec2 {
+    color: gray;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Left Box */
+.sec2 .left {
+    width: 65%;
+}
+
+.sec2 .left img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Left Section 1 */
+.sec2 .left .left_sec1 {
+    padding-bottom: 40px;
+    border-bottom: 1px solid grey;
+}
+
+.sec2 .left .left_sec1 h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: lightgray;
+}
+
+.sec2 .left .left_sec1 p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 23px;
+    margin-top: 20px;
+}
+
+.sec2 .left .left_sec1 p a {
+    color: lightgray;
+}
+
+.sec2 .left .left_sec1 button {
+    background-color: #2b8fc4;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-weight: lighter;
+    height: 43px;
+    width: 123px;
+    margin-top: 27px;
+}
+
+/* Left Section 2 */
+.sec2 .left .left_sec2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.sec2 .left .left_sec2 .innerleft {
+    width: 47%;
+}
+
+.sec2 .left .left_sec2 .innerleft h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: lightgray;
+}
+
+.sec2 .left .left_sec2 .innerleft p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 23px;
+    margin-top: 20px;
+}
+
+.sec2 .left .left_sec2 .innerleft ul {
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.sec2 .left .left_sec2 .innerleft li h4 {
+    font-size: 1.3rem;
+    color: lightgray;
+    
+}
+
+.sec2 .left .left_sec2 .innerleft li button {
+    background-color: #2b8fc4;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-weight: lighter;
+    height: 35px;
+    width: 100px;
+    font-size: 12px;
+    margin-right: 7px;
+}
+
+.sec2 .left .left_sec2 .innerleft hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: gray;
+    margin: 30px 0 40px 0;
+}
+
+.sec2 .left .left_sec2 .innerright {
+    width: 47%;
+}
+
+.sec2 .left .left_sec2 .innerright h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: lightgray;
+}
+
+.sec2 .left .left_sec2 .innerright .heading {
+    list-style: none;
+    font-size: 1.3rem;
+    color: lightgray;
+    margin-bottom: 30px;
+}
+
+.sec2 .left .left_sec2 .innerright ul {
+    list-style-type: square;
+}
+
+.sec2 .left .left_sec2 .innerright li {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 23px;
+}
+
+.sec2 .left .left_sec2 .innerright hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: gray;
+    margin: 20px 0;
+}
+
+/* Right Box */
+.sec2 .right {
+    width: 30%;
+}
+
+/* Right Section 1 */
+.sec2 .right .right_sec1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sec2 .right .right_sec1 .innerleft {
+    width: 43%;
+}
+
+.sec2 .right .right_sec1 .innerright {
+    width: 43%;
+}
+
+.sec2 .right .right_sec1 .innerleft h3, .sec2 .right .right_sec1 .innerright h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: lightgray;
+}
+
+.sec2 .right .right_sec1 .innerleft ul, .sec2 .right .right_sec1 .innerright ul {
+    list-style-type: square;
+    margin-top: 30px;
+}
+
+.sec2 .right .right_sec1 .innerleft li, .sec2 .right .right_sec1 .innerright li {
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+.sec2 .right .right_sec1 .innerleft hr, .sec2 .right .right_sec1 .innerright hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: gray;
+    margin: 10px 0;
+}
+
+/* Right Section 2 */
+.sec2 .right .right_sec2 {
+    margin-top: 40px;
+}
+
+.sec2 .right .right_sec2 h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: lightgray;
+}
+
+.sec2 .right .right_sec2 ul {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.sec2 .right .right_sec2 li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec2 .right .right_sec2 img {
+    width: 25%;
+    border-radius: 4px;
+}
+
+.sec2 .right .right_sec2 li p {
+    width: 70%;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+.sec2 .right .right_sec2 hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: gray;
+    margin: 40px 0 30px 0;
+}
+
+.sec2 .right .right_sec2 button {
+    background-color: #2b8fc4;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-weight: lighter;
+    height: 43px;
+    width: 123px;
+    margin-top: 30px;
+}
+/* Section 2 Ends Here */
+
+/* Website Body Ends Here */
+
+/* ................................................................................................................. */
+
+/* Website Footer Starts Here */
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: gray;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 40px 0 80px 0;
+    border-top: 1px solid gray;
+}
+
+footer a {
+    font-size: 1.5rem;
+    color: lightgray;
+}
+/* Website Footer Ends Here */
+
+
+
+/* ********************************************** Media Queries ********************************************** */
+
+/* Media Queries For Tablet Devices */
+@media only screen and (max-width: 1100px) {
+    html {
+        font-size: 9.5px;
+    }
+
+    /* Website Header Starts Here #_Tablet_Devices */
+    header .center {
+        width: 90%;
+    }
+
+    header nav .navMenu a {
+        text-align: center;
+    }
+
+    header nav .navMenu a:hover {
+        transform: none;
+        text-shadow: 3px 3px 4px #2b8fc4;
+        cursor: default;
+        letter-spacing: 1px;
+    }
+
+    header nav .navMenu a:active {
+        letter-spacing: 1px;
+        text-shadow: 3px 3px 4px #2b8fc4;
+    }
+
+    header .banner h1 {
+        font-size: 30px;
+        font-weight: lighter;
+    }
+
+    header .banner p {
+        margin-top: 10px;
+        line-height: 35px;
+        font-weight: lighter;
+    }
+
+    header .banner button {
+        margin-top: 40px;
+    }
+    /* Website Header Ends Here #_Tablet_Devices */
+
+    /* Website Body Starts Here #_Tablet_Devices */
+    /* Section 1. Three Boxes Starts Here #_Tablet_Devices */
+    .sec1 .center {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .sec1 .box {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .sec1 .marginTop {
+        margin-top: 50px;
+    }
+    /* Section 1. Three Boxes Ends Here #_Tablet_Devices */
+
+    /* Section 2 Starts Here #_Tablet_Devices */
+    .sec2 {
+        width: 90%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    /* Left Box */
+    .sec2 .left {
+        width: 100%;
+    }
+    
+    .sec2 .left img {
+        max-width: 500px;
+    }
+
+    /* Left Section 1 */
+    .sec2 .left .left_sec1 p {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    /* Left Section 2 */
+    .sec2 .left .left_sec2 {
+        text-align: left;
+    } 
+
+    /* Right Box */
+    .sec2 .right {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 80px;
+        text-align: left;
+    }
+
+    /* Right Section 1 */
+    .sec2 .right .right_sec1 {
+        width: 40%;
+    }
+
+    /* Right Section 2 */
+    .sec2 .right .right_sec2 {
+        width: 40%;
+        margin: 0;
+    }
+
+    .sec2 .right .right_sec2 img {
+        width: 22%;
+    }
+    /* Section 2 Ends Here #_Tablet_Devices */
+    /* Website Body Ends Here #_Tablet_Devices */
+
+    /* Website Footer Starts Here #_Tablet_Devices */
+    footer {
+        width: 90%;
+    }
+    /* Website Footer Ends Here #_Tablet_Devices */
+}
+
+
+/* Media Queries For Mobile Devices */
+@media only screen and (max-width: 760px) {
+
+    /* Website Header Starts Here #_Mobile_Devices */
+    header nav .logo {
+        font-size: 25px;
+        font-weight: 900;
+        width: 70%;
+    }
+    
+    header nav .navMenu {
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.658);
+        padding: 20px 0;
+        margin-top: 30px;
+        display: none;
+    }
+    
+    header nav li {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    header nav .navMenu a {
+        padding: 0;
+        font-size: 15px;
+    }
+
+    header nav .navMenu .active a {
+        padding: 10px;
+    }
+
+    header nav .trigger {
+        display: block;
+        background: none;
+        color: white;
+        border: 1px solid white;
+        font-size: 20px;
+        height: 35px;
+        width: 35px;
+    }
+
+    header .banner {
+        margin-top: 100px;
+    }
+
+    header .banner h1 {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+
+    header .banner p {
+        line-height: 30px;
+        font-weight: lighter;
+    }
+
+    header .banner button {
+        margin-top: 30px;
+        height: 40px;
+        width: 100%;
+    }
+    /* Website Header Ends Here #_Mobile_Devices */
+
+    /* Website Body Starts Here #_Mobile_Devices */
+    /* Section 1. Three Boxes Starts Here #_Mobile_Devices */
+    .sec1 .center {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sec1 .box {
+        width: 100%;
+        margin: 0;
+        margin-top: 100px;
+    }
+
+    .sec1 .disableMargin {
+        margin: 0;
+    }
+
+    .sec1 .box button {
+        height: 35px;
+        width: 100%;
+    }
+    /* Section 1. Three Boxes Ends Here #_Mobile_Devices */
+
+    /* Section 2 Starts Here #_Mobile_Devices */
+    /* Left Box */
+    /* Left Section 1 */
+    .sec2 .left .left_sec1 button {
+        height: 35px;
+        width: 100%;
+    }
+
+    /* Left Section 2 */
+    .sec2 .left .left_sec2 {
+        flex-direction: column;
+    }
+
+    .sec2 .left .left_sec2 .innerleft {
+        width: 100%;
+    }
+
+    .sec2 .left .left_sec2 .innerright {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    /* Right Box */
+    .sec2 .right {
+        flex-direction: column;
+    }
+
+    /* Right Section 1 */
+    .sec2 .right .right_sec1 {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sec2 .right .right_sec1 .innerleft {
+        width: 50%;
+    }
+    
+    .sec2 .right .right_sec1 .innerright {
+        margin-top: 30px;
+        width: 50%;
+    }
+
+    .sec2 .right .right_sec1 .innerleft ul, .sec2 .right .right_sec1 .innerright ul {
+        margin-top: 20px;
+    }
+
+    /* Right Section 2 */
+    .sec2 .right .right_sec2 {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .sec2 .right .right_sec2 img {
+        flex-basis: 80px;
+    }
+
+    .sec2 .right .right_sec2 button {
+        margin-top: 40px;
+        height: 35px;
+        width: 100%;
+    }
+    /* Section 2 Ends Here #_Mobile_Devices */
+    /* Website Body Ends Here #_Mobile_Devices */
+
+    /* Website Footer Starts Here #_Mobile_Devices */
+    /* Website Footer Ends Here #_Mobile_Devices */
+}
